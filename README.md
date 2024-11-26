@@ -21,6 +21,8 @@ The below code analyzes the City of Chicago’s vehicle crash data, which can be
 
 &nbsp;&nbsp;&nbsp;&nbsp; I also overlaid the theoretical counts from the best-fitting Poisson Distribution on a histogram of the weekly crash data. Visual inspection showed significant discrepancies, with the Poisson Distribution either overshooting or undershooting the observed values. This confirmed that the Poisson Distribution is not a good fit for the data.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![best_fitting_possion_dist](https://github.com/Dsackler/Analysis_of_Chicago_Car_Crash_Data/blob/main/images/Poisson%20Dist.png)
+
 ---
 
 ## The Negative Binomial Distribution as a Better Alternative
@@ -32,6 +34,8 @@ The below code analyzes the City of Chicago’s vehicle crash data, which can be
 &nbsp;&nbsp;&nbsp;&nbsp; Using the Negative Binomial Distribution, I obtained parameter estimates of size = 20.54 with a standard error of 2.65 and μ = 46.79 with a standard error of 0.76. The K-S test, with α=0.01, yielded a p-value of 0.0426 > 0.010, leading me to fail to reject the null hypothesis. This indicates that a sample similar to the weekly crash data would occur more than 4% of the time under the Negative Binomial Distribution, making it a suitable model.
 
 &nbsp;&nbsp;&nbsp;&nbsp; I overlaid the theoretical counts from the best-fitting Negative Binomial Distribution on the weekly crash data histogram. The theoretical counts matched the observed values closely, further confirming that the Negative Binomial Distribution is a good fit for the data.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![best_fitting_negative_binomial_dist](https://github.com/Dsackler/Analysis_of_Chicago_Car_Crash_Data/blob/main/images/Negative%20Binomial%20Dist.png)
 
 ---
 
